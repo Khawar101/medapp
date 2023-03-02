@@ -7,7 +7,7 @@ import 'package:speed_code/widgets/small_text_widget.dart';
 import 'package:readmore/readmore.dart';
 
 class ProfileScreen extends StatefulWidget {
-  const ProfileScreen({super.key});
+  const ProfileScreen({key});
 
   @override
   State<ProfileScreen> createState() => _ProfileScreenState();

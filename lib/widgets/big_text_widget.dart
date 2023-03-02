@@ -9,7 +9,7 @@ class BigText extends StatelessWidget {
   double size;
   TextOverflow overFlow;
   final fontWeight;
-   BigText({super.key, this.color=const Color(0xFF332d2b), required this.text,
+   BigText({key, this.color=const Color(0xFF332d2b), required this.text,
   this.size=20,this.overFlow=TextOverflow.ellipsis,  this.fontWeight,
   });
 
@@ -19,7 +19,6 @@ class BigText extends StatelessWidget {
       text,
       overflow: overFlow,
       style:  GoogleFonts.ibmPlexSans(
-       
         color: color,
         fontWeight:fontWeight,
         fontSize: size,
