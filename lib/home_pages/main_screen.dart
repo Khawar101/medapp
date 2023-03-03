@@ -23,7 +23,7 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Column(
           children: [
             Container(
-              padding: EdgeInsets.symmetric(horizontal: 15, vertical: 15),
+              padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
               color: const Color(0xFF1859dc),
               child: Column(
                 children: [
@@ -42,8 +42,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 borderRadius: BorderRadius.circular(25),
                                 image: const DecorationImage(
                                   fit: BoxFit.cover,
-                                  image: NetworkImage(
-                                      "https://www.24newshd.tv/digital_images/large/2022-06-08/actress-durefishan-sees-no-harm-in-dating-once-you-are-committed-with-someone-1654675524-8004.jpg"),
+                                  image: AssetImage("assets/images/profile_pic.png"),
                                 ),
                               ),
                             ),
@@ -92,7 +91,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                   Container(
-                    padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+                    padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
                     decoration: BoxDecoration(
                       color: Colors.white10,
                       borderRadius: BorderRadius.circular(20),
@@ -111,7 +110,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     color: Colors.white,
                                     fontWeight: FontWeight.w500,
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 3,
                                   ),
                                   SmallText(
@@ -121,11 +120,11 @@ class _HomeScreenState extends State<HomeScreen> {
                                       color: Colors.white70),
                                 ]),
                             Container(
-                              padding: EdgeInsets.symmetric(horizontal: 15),
+                              padding: const EdgeInsets.symmetric(horizontal: 15),
                               height: 40,
                               width: 55,
                               decoration: BoxDecoration(
-                                color: Color(0xFFFFC846),
+                                color: const Color(0xFFFFC846),
                                 borderRadius: BorderRadius.circular(25),
                               ),
                               child: Image.asset(
@@ -137,7 +136,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             )
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         Container(
@@ -221,7 +220,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         ],
                       ),
                       const SizedBox(height: 15),
-                      Container(
+                      SizedBox(
                         width: MediaQuery.of(context).size.width,
                         height: 90,
                         child: ListView.builder(
@@ -231,7 +230,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           itemBuilder: (context, position) {
                             return Container(
                               width: 90,
-                              margin: EdgeInsets.only(right: 7),
+                              margin: const EdgeInsets.only(right: 7),
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(10),
                                 color: const Color.fromARGB(12, 8, 8, 8),
@@ -253,7 +252,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                       child: const Icon(Icons.check_box_sharp,
                                           size: 20, color: Color(0xFF1859dc)),
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 10,
                                     ),
                                     BigText(
@@ -305,7 +304,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             itemCount: 20,
                             itemBuilder: (context, position) {
                               return Container(
-                                margin: EdgeInsets.only(bottom: 15),
+                                margin: const EdgeInsets.only(bottom: 15),
                                 child: Row(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
@@ -331,7 +330,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                         child: Column(
                                           children: [
                                             Container(
-                                              margin: EdgeInsets.symmetric(
+                                              margin: const EdgeInsets.symmetric(
                                                 horizontal: 7,
                                                 vertical: 7,
                                               ),
@@ -345,7 +344,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                 mainAxisAlignment:
                                                     MainAxisAlignment.start,
                                                 children: [
-                                                  SizedBox(
+                                                  const SizedBox(
                                                     width: 10,
                                                   ),
                                                   const FaIcon(
@@ -353,7 +352,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                     color: Color(0xFF1859dc),
                                                     size: 12,
                                                   ),
-                                                  SizedBox(
+                                                  const SizedBox(
                                                     width: 7,
                                                   ),
                                                   SmallText(
@@ -361,7 +360,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                       size: 11,
                                                       fontWeight:
                                                           FontWeight.w500,
-                                                      color: Color(0xFF1859dc)),
+                                                      color: const Color(0xFF1859dc)),
                                                 ],
                                               ),
                                             ),
@@ -383,7 +382,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                               BigText(
                                                 text: "INDIVIDUAL",
                                                 size: 12,
-                                                color: Color(0xFF1859dc),
+                                                color: const Color(0xFF1859dc),
                                                 fontWeight: FontWeight.w500,
                                               ),
                                               const SizedBox(width: 6),
@@ -409,19 +408,16 @@ class _HomeScreenState extends State<HomeScreen> {
                                             fontWeight: FontWeight.w500,
                                           ),
                                           // const SizedBox(height: 5),
-                                          Container(
-                                            width: MediaQuery.of(context)
-                                                    .size
-                                                    .width *
-                                                0.6,
+                                          SizedBox(
+                                            width: MediaQuery.of(context) .size .width * 0.6,                                                                                                                                                     
                                             child: Text(
                                               "Get your furniture and equipment assembled at our doorstep...",
                                               maxLines: 2,
                                               style: GoogleFonts.ibmPlexSans(
                                                 height: 1.5,
                                                 fontSize: 13,
-                                                color: Color.fromARGB(
-                                                    141, 0, 0, 0),
+                                                color: Color.fromARGB( 141, 0, 0, 0),
+                                                
                                               ),
                                             ),
                                           ),
@@ -463,278 +459,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           ),
                         ),
 
-                        // child: SingleChildScrollView(
-                        //   scrollDirection: Axis.vertical,
-                        //   child: Column(
-                        //     children: [
-                        //       Row(
-                        //         crossAxisAlignment: CrossAxisAlignment.start,
-                        //         children: [
-                        //           GestureDetector(
-                        //             onTap: () {
-                        //               Navigator.push(
-                        //                   context,
-                        //                   MaterialPageRoute(
-                        //                       builder: (context) =>
-                        //                           const ProfileScreen()));
-                        //             },
-                        //             child: Container(
-                        //               height: 180,
-                        //               width: 180,
-                        //               decoration: BoxDecoration(
-                        //                 borderRadius: BorderRadius.circular(30),
-                        //                 image: const DecorationImage(
-                        //                     image: NetworkImage(
-                        //                         "https://reviewit.pk/wp-content/uploads/2021/01/durefishan-2-3.jpg"),
-                        //                     fit: BoxFit.cover),
-                        //               ),
-                        //               child: Stack(
-                        //                 children: [
-                        //                   Padding(
-                        //                     padding: const EdgeInsets.fromLTRB(
-                        //                         15, 8, 30, 0),
-                        //                     child: Container(
-                        //                       height: 25,
-                        //                       width: 120,
-                        //                       decoration: BoxDecoration(
-                        //                         color: Colors.white,
-                        //                         borderRadius:
-                        //                             BorderRadius.circular(15),
-                        //                       ),
-                        //                       child: Row(
-                        //                         mainAxisAlignment:
-                        //                             MainAxisAlignment.center,
-                        //                         children: [
-                        //                           const FaIcon(
-                        //                             FontAwesomeIcons.crown,
-                        //                             color: Color.fromARGB(
-                        //                                 237, 33, 100, 243),
-                        //                             size: 14,
-                        //                           ),
-                        //                           SmallText(
-                        //                               text: "  Top TaskKing",
-                        //                               size: 13,
-                        //                               fontWeight:
-                        //                                   FontWeight.bold,
-                        //                               color:
-                        //                                   const Color.fromARGB(
-                        //                                       237,
-                        //                                       33,
-                        //                                       100,
-                        //                                       243)),
-                        //                         ],
-                        //                       ),
-                        //                     ),
-                        //                   ),
-                        //                 ],
-                        //               ),
-                        //             ),
-                        //           ),
-                        //           Padding(
-                        //             padding: const EdgeInsets.fromLTRB(
-                        //                 10, 10, 10, 10),
-                        //             child: Column(
-                        //               crossAxisAlignment:
-                        //                   CrossAxisAlignment.start,
-                        //               children: [
-                        //                 Row(
-                        //                   mainAxisAlignment:
-                        //                       MainAxisAlignment.spaceBetween,
-                        //                   children: [
-                        //                     BigText(
-                        //                       text: "INDIVIDUAL",
-                        //                       size: 14,
-                        //                       color: Colors.lightBlue,
-                        //                       fontWeight: FontWeight.bold,
-                        //                     ),
-                        //                     const SizedBox(width: 6),
-                        //                     const Icon(
-                        //                       Icons.trip_origin,
-                        //                       color:
-                        //                           Color.fromARGB(157, 0, 0, 0),
-                        //                       size: 5,
-                        //                     ),
-                        //                     const SizedBox(width: 6),
-                        //                     BigText(
-                        //                       text: "ASSEMBLY",
-                        //                       size: 14,
-                        //                       color: Colors.lightBlue,
-                        //                       fontWeight: FontWeight.bold,
-                        //                     ),
-                        //                   ],
-                        //                 ),
-                        //                 const SizedBox(height: 10),
-                        //                 BigText(
-                        //                   text: "Dur-e-Fishan",
-                        //                   size: 22,
-                        //                   fontWeight: FontWeight.w500,
-                        //                 ),
-                        //                 const SizedBox(height: 10),
-                        //                 SmallText(
-                        //                   text:
-                        //                       "Get your furniture and\nequipment assembled...",
-                        //                   height: 1.5,
-                        //                   size: 17,
-                        //                   color: Color.fromARGB(141, 0, 0, 0),
-                        //                 ),
-                        //                 const SizedBox(height: 19),
-                        //                 Row(
-                        //                   mainAxisAlignment:
-                        //                       MainAxisAlignment.spaceBetween,
-                        //                   children: [
-                        //                     BigText(
-                        //                       text: "\$10/hr ",
-                        //                       size: 16,
-                        //                       fontWeight: FontWeight.bold,
-                        //                     ),
-                        //                     const Icon(
-                        //                       Icons.trip_origin,
-                        //                       color:
-                        //                           Color.fromARGB(157, 0, 0, 0),
-                        //                       size: 5,
-                        //                     ),
-                        //                     SmallText(
-                        //                       text: "  1K+Tasks done",
-                        //                       color: const Color.fromARGB(
-                        //                           141, 0, 0, 0),
-                        //                     ),
-                        //                   ],
-                        //                 ),
-                        //               ],
-                        //             ),
-                        //           ),
-                        //         ],
-                        //       ),
-                        //       const SizedBox(height: 20),
-                        //       Row(
-                        //         //  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        //         crossAxisAlignment: CrossAxisAlignment.start,
-                        //         children: [
-                        //           Container(
-                        //             height: 180,
-                        //             width: 180,
-                        //             decoration: BoxDecoration(
-                        //               borderRadius: BorderRadius.circular(30),
-                        //               image: const DecorationImage(
-                        //                   image: NetworkImage(
-                        //                       "https://tvline.com/wp-content/uploads/2018/05/13-reasons-why-katherine-langford.jpg"),
-                        //                   fit: BoxFit.cover),
-                        //             ),
-                        //             child: Stack(
-                        //               children: [
-                        //                 Padding(
-                        //                   padding: const EdgeInsets.fromLTRB(
-                        //                       15, 8, 30, 0),
-                        //                   child: Container(
-                        //                     height: 25,
-                        //                     width: 120,
-                        //                     decoration: BoxDecoration(
-                        //                       color: Colors.white,
-                        //                       borderRadius:
-                        //                           BorderRadius.circular(15),
-                        //                     ),
-                        //                     child: Row(
-                        //                       mainAxisAlignment:
-                        //                           MainAxisAlignment.center,
-                        //                       children: [
-                        //                         const FaIcon(
-                        //                           FontAwesomeIcons.crown,
-                        //                           color: Color.fromARGB(
-                        //                               237, 33, 100, 243),
-                        //                           size: 14,
-                        //                         ),
-                        //                         SmallText(
-                        //                             text: "  Top TaskKing",
-                        //                             size: 13,
-                        //                             fontWeight: FontWeight.bold,
-                        //                             color: const Color.fromARGB(
-                        //                                 237, 33, 100, 243)),
-                        //                       ],
-                        //                     ),
-                        //                   ),
-                        //                 ),
-                        //               ],
-                        //             ),
-                        //           ),
-                        //           Padding(
-                        //             padding: const EdgeInsets.fromLTRB(
-                        //                 10, 10, 10, 10),
-                        //             child: Column(
-                        //               crossAxisAlignment:
-                        //                   CrossAxisAlignment.start,
-                        //               children: [
-                        //                 Row(
-                        //                   mainAxisAlignment:
-                        //                       MainAxisAlignment.spaceBetween,
-                        //                   // crossAxisAlignment: CrossAxisAlignment.spaceBetween,
-                        //                   children: [
-                        //                     BigText(
-                        //                       text: "INDIVIDUAL",
-                        //                       size: 14,
-                        //                       color: Colors.lightBlue,
-                        //                       fontWeight: FontWeight.bold,
-                        //                     ),
-                        //                     const SizedBox(width: 6),
-                        //                     const Icon(
-                        //                       Icons.trip_origin,
-                        //                       color:
-                        //                           Color.fromARGB(157, 0, 0, 0),
-                        //                       size: 5,
-                        //                     ),
-                        //                     const SizedBox(width: 6),
-                        //                     BigText(
-                        //                       text: "ASSEMBLY",
-                        //                       size: 14,
-                        //                       color: Colors.lightBlue,
-                        //                       fontWeight: FontWeight.bold,
-                        //                     ),
-                        //                   ],
-                        //                 ),
-                        //                 const SizedBox(height: 10),
-                        //                 BigText(
-                        //                   text: "Katherine Langford",
-                        //                   size: 20,
-                        //                   fontWeight: FontWeight.w600,
-                        //                 ),
-                        //                 const SizedBox(height: 10),
-                        //                 SmallText(
-                        //                   text:
-                        //                       "Get your furniture and\nequipment assembled...",
-                        //                   height: 1.5,
-                        //                   size: 17,
-                        //                   color: Color.fromARGB(141, 0, 0, 0),
-                        //                 ),
-                        //                 const SizedBox(height: 19),
-                        //                 Row(
-                        //                   mainAxisAlignment:
-                        //                       MainAxisAlignment.spaceBetween,
-                        //                   children: [
-                        //                     BigText(
-                        //                       text: "\$10/hr ",
-                        //                       size: 16,
-                        //                       fontWeight: FontWeight.bold,
-                        //                     ),
-                        //                     const Icon(
-                        //                       Icons.trip_origin,
-                        //                       color:
-                        //                           Color.fromARGB(157, 0, 0, 0),
-                        //                       size: 5,
-                        //                     ),
-                        //                     SmallText(
-                        //                       text: "  1K+Tasks done",
-                        //                       color: const Color.fromARGB(
-                        //                           141, 0, 0, 0),
-                        //                     ),
-                        //                   ],
-                        //                 ),
-                        //               ],
-                        //             ),
-                        //           ),
-                        //         ],
-                        //       ),
-                        //     ],
-                        //   ),
-                        // ),
+                   
                       ),
                     ],
                   ),

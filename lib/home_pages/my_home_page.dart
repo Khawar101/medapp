@@ -28,7 +28,7 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
           ),
-          Spacer(),
+          const Spacer(),
           Expanded(
             flex: 3,
             child: Container(
