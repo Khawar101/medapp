@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:speed_code/home_pages/main_screen.dart';
-import 'package:speed_code/home_pages/my_home_page.dart';
-import 'package:speed_code/home_pages/profile_screen.dart';
 
 void main() {
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({key});
+  const MyApp({Key? key}) : super(key: key);
 
   // This widget is the root of your application.
   @override
@@ -16,11 +14,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-   
         primarySwatch: Colors.blue,
       ),
       debugShowCheckedModeBanner: false,
-      home:  HomePage(),
+      home: const MainScreen(),
     );
   }
 }

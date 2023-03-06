@@ -4,7 +4,7 @@ import 'package:speed_code/home_pages/main_screen.dart';
 import 'package:speed_code/widgets/big_text_widget.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({key});
+  const HomePage({Key? key}) : super(key: key);
 
   @override
   State<HomePage> createState() => _HomePageState();
@@ -59,7 +59,7 @@ class _HomePageState extends State<HomePage> {
                       height: 45,
                       width: double.infinity,
                       decoration: BoxDecoration(
-                        color: Color(0xFFFFC846),
+                        color: const Color(0xFFFFC846),
                         borderRadius: BorderRadius.circular(60),
                       ),
                       child: Center(
@@ -74,7 +74,7 @@ class _HomePageState extends State<HomePage> {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const HomeScreen()));
+                                builder: (context) => const MainScreen()));
                       },
                       child: Container(
                         margin: const EdgeInsets.fromLTRB(20, 0, 20, 5),
@@ -83,13 +83,13 @@ class _HomePageState extends State<HomePage> {
                         decoration: BoxDecoration(
                           border: Border.all(
                               width: 1,
-                              color: Color(0xFF1859dc).withOpacity(0.6)),
+                              color: const Color(0xFF1859dc).withOpacity(0.6)),
                           borderRadius: BorderRadius.circular(60),
                         ),
                         child: Center(
                             child: BigText(
                           text: "I already have an account",
-                          color: Color(0xFF1859dc),
+                          color: const Color(0xFF1859dc),
                           size: 15,
                           fontWeight: FontWeight.w500,
                         )),
