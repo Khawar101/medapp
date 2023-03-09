@@ -100,108 +100,113 @@ class _MessagesPageState extends State<MessagesPage> {
           Expanded(
             child: Container(
               margin: const EdgeInsets.symmetric(horizontal: 15),
-              child: ListView.builder(
-                scrollDirection: Axis.vertical,
-                shrinkWrap: true,
-                itemCount: 20,
-                itemBuilder: (context, position) {
-                  return Padding(
-                    padding: const EdgeInsets.only(bottom: 20),
-                    child: Column(
-                      children: [
-                        Align(
-                          alignment: Alignment.topLeft,
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Container(
-                                //  height: 120,
-                                width: MediaQuery.of(context).size.width * 0.6,
-                                decoration: BoxDecoration(
-                                    color: const Color(0xffffffff),
-                                    borderRadius: BorderRadius.circular(10.0)),
-                                child: Row(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: const [
-                                    SizedBox(
-                                      width: 20,
-                                    ),
-                                    Expanded(
-                                      child: TextField(
-                                        decoration: InputDecoration(
-                                          hintText:
-                                              "Task Description goes here...",
-                                          hintStyle: TextStyle(
-                                              color: Colors.black,
-                                              fontSize: 16),
-                                          border: InputBorder.none,
+              child: MediaQuery.removePadding(
+                 context: context,
+                removeTop: true,
+                child: ListView.builder(
+                  scrollDirection: Axis.vertical,
+                  shrinkWrap: true,
+                  itemCount: 1,
+                  itemBuilder: (context, position) {
+                    return Padding(
+                      padding: const EdgeInsets.only(bottom: 20),
+                      child: Column(
+                        children: [
+                          Align(
+                            alignment: Alignment.topLeft,
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Container(
+                                  //  height: 120,
+                                  width: MediaQuery.of(context).size.width * 0.6,
+                                  decoration: BoxDecoration(
+                                      color: const Color(0xffffffff),
+                                      borderRadius: BorderRadius.circular(10.0)),
+                                  child: Row(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: const [
+                                      SizedBox(
+                                        width: 20,
+                                      ),
+                                      Expanded(
+                                        child: TextField(
+                                          decoration: InputDecoration(
+                                            hintText:
+                                                "Task Description goes here...",
+                                            hintStyle: TextStyle(
+                                                color: Colors.black,
+                                                fontSize: 16),
+                                            border: InputBorder.none,
+                                          ),
                                         ),
                                       ),
-                                    ),
-                                  ],
+                                    ],
+                                  ),
                                 ),
-                              ),
-                              const SizedBox(
-                                height: 5,
-                              ),
-                              const Padding(
-                                padding: EdgeInsets.only(left: 15),
-                                child: Text("09:32 PM"),
-                              ),
-                            ],
+                                const SizedBox(
+                                  height: 5,
+                                ),
+                                const Padding(
+                                  padding: EdgeInsets.only(left: 15),
+                                  child: Text("09:32 PM"),
+                                ),
+                              ],
+                            ),
                           ),
-                        ),
-                        const SizedBox(height: 18),
-                        Align(
-                          alignment: Alignment.topRight,
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Container(
-                                //  height: 120,
-                                width: MediaQuery.of(context).size.width * 0.6,
-                                decoration: BoxDecoration(
-                                    color: const Color(0xFF1859dc),
-                                    borderRadius: BorderRadius.circular(10.0)),
-                                child: Row(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: const [
-                                    SizedBox(
-                                      width: 20,
-                                    ),
-                                    Expanded(
-                                      child: TextField(
-                                        decoration: InputDecoration(
-                                          hintText:
-                                              "Task Description goes here...",
-                                          hintStyle: TextStyle(
-                                              color: Colors.white,
-                                              fontSize: 16),
-                                          border: InputBorder.none,
+                          const SizedBox(height: 18),
+                          Align(
+                            alignment: Alignment.topRight,
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                
+                                Container(
+                                  //  height: 120,
+                                  width: MediaQuery.of(context).size.width * 0.6,
+                                  decoration: BoxDecoration(
+                                      color: const Color(0xFF1859dc),
+                                      borderRadius: BorderRadius.circular(10.0)),
+                                  child: Row(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: const [
+                                      SizedBox(
+                                        width: 20,
+                                      ),
+                                      Expanded(
+                                        child: TextField(
+                                          decoration: InputDecoration(
+                                            hintText:
+                                                "Task Description goes ...",
+                                            hintStyle: TextStyle(
+                                                color: Colors.white,
+                                                fontSize: 16),
+                                            border: InputBorder.none,
+                                          ),
                                         ),
                                       ),
-                                    ),
-                                  ],
+                                    ],
+                                  ),
                                 ),
-                              ),
-                              const SizedBox(
-                                height: 5,
-                              ),
-                              const Padding(
-                                padding: EdgeInsets.only(left: 15),
-                                child: Text("10:50 PM"),
-                              ),
-                            ],
+                                const SizedBox(
+                                  height: 5,
+                                ),
+                                const Padding(
+                                  padding: EdgeInsets.only(left: 15),
+                                  child: Text("10:50 PM"),
+                                ),
+                              ],
+                            ),
                           ),
-                        ),
-                      ],
-                    ),
-                  );
-                },
+                        ],
+                      ),
+                    );
+                  },
+                ),
               ),
             ),
           ),
-
+//
           Container(
             height: 100,
             width: double.infinity,
@@ -255,7 +260,12 @@ class _MessagesPageState extends State<MessagesPage> {
                 ),
               ),
             ),
-          )
+          ),
+
+
+
+
+
         ],
       ),
     );

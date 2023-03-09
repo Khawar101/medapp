@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:speed_code/chating_page.dart';
 import 'package:speed_code/widgets/big_text_widget.dart';
 import 'package:speed_code/widgets/small_text_widget.dart';
 import 'package:readmore/readmore.dart';
@@ -512,10 +513,13 @@ class _ProfileScreenState extends State<ProfileScreen> {
                             width: 1,
                             color: const Color.fromARGB(255, 25, 109, 179)),
                       ),
-                      child: const Icon(
-                        Icons.message,
-                        size: 25,
-                        color: Color.fromARGB(255, 25, 109, 179),
+                      child: GestureDetector(
+                        onTap: () => Navigator.push(context, MaterialPageRoute(builder: ((context) => const ChatPage()))),
+                        child: const Icon(
+                          Icons.message,
+                          size: 25,
+                          color: Color.fromARGB(255, 25, 109, 179),
+                        ),
                       ),
                     ),
                     Container(
