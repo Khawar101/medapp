@@ -12,14 +12,14 @@ import '../bottom_nav_bar.dart';
 
 
 
-class MainScreen extends StatefulWidget {
-  const MainScreen({Key? key}) : super(key: key);
+class Home extends StatefulWidget {
+  const Home({Key? key}) : super(key: key);
 
   @override
-  State<MainScreen> createState() => _MainScreenState();
+  State<Home> createState() => _HomeState();
 }
 
-class _MainScreenState extends State<MainScreen> {
+class _HomeState extends State<Home> {
   
 
   @override
