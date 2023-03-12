@@ -1,16 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:speed_code/messages_page.dart';
+import 'package:speed_code/ui/chat/chat_messaging_screen.dart';
 
 
-class Chat extends StatefulWidget {
-  const Chat({Key? key}) : super(key: key);
+
+
+class ChatListScreen extends StatefulWidget {
+  const ChatListScreen({Key? key}) : super(key: key);
 
   @override
-  State<Chat> createState() => _ChatState();
+  State<ChatListScreen> createState() => _ChatListScreenState();
 }
 
-class _ChatState extends State<Chat> {
+class _ChatListScreenState extends State<ChatListScreen> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -84,7 +86,7 @@ class _ChatState extends State<Chat> {
                                         context,
                                         MaterialPageRoute(
                                             builder: (context) =>
-                                                const MessagesPage()));
+                                                const MessagingScreen()));
                                   },
                                   child: Container(
                                     height: 80,

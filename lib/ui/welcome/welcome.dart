@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:speed_code/base.dart';
-import 'package:speed_code/bottom_nav_bar.dart';
-import 'package:speed_code/home_pages/main_screen.dart';
+import 'package:speed_code/ui/base/base.dart';
 import 'package:speed_code/widgets/big_text_widget.dart';
-
 
 class Welcome extends StatefulWidget {
   const Welcome({Key? key}) : super(key: key);
@@ -88,7 +85,8 @@ class _WelcomeState extends State<Welcome> {
                             decoration: BoxDecoration(
                               border: Border.all(
                                   width: 1,
-                                  color: const Color(0xFF1859dc).withOpacity(0.6)),
+                                  color:
+                                      const Color(0xFF1859dc).withOpacity(0.6)),
                               borderRadius: BorderRadius.circular(60),
                             ),
                             child: Center(
@@ -108,7 +106,6 @@ class _WelcomeState extends State<Welcome> {
             ),
           ],
         ),
-      
       ),
     );
   }

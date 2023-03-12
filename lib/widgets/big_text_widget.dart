@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:speed_code/home_pages/my_home_page.dart';
 
 
 class BigText extends StatelessWidget {

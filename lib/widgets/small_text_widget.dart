@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:speed_code/home_pages/my_home_page.dart';
 
 class SmallText extends StatelessWidget {
   final Color color;

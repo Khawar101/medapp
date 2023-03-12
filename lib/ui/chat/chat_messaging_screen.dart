@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class MessagesPage extends StatefulWidget {
-  const MessagesPage({Key? key}) : super(key: key);
+class MessagingScreen extends StatefulWidget {
+  const MessagingScreen({Key? key}) : super(key: key);
 
   @override
-  State<MessagesPage> createState() => _MessagesPageState();
+  State<MessagingScreen> createState() => _MessagingScreenState();
 }
 
-class _MessagesPageState extends State<MessagesPage> {
+class _MessagingScreenState extends State<MessagingScreen> {
   @override
   Widget build(BuildContext context) {
     double barHeight = 80.0;

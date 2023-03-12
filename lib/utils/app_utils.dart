@@ -1,25 +1,25 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-class AppUtils{
-cardWidget(
+
+class AppUtils {
+  cardWidget(
       {width,
       height,
       borderColor,
-      
       borderWidth,
       borderRadius,
       containerColor,
       text,
-      
-     hintTextColour,
+      hintTextColour,
       shadowColors,
       textColor,
       fontSize,
-      fontWeight, required hintText}) {
+      fontWeight,
+      required hintText}) {
     return Container(
       width: width,
       height: height,
-       padding: const EdgeInsets.all(5),
+      padding: const EdgeInsets.all(5),
       decoration: BoxDecoration(
         border: Border.all(
             color: borderColor ?? Colors.transparent,
@@ -37,25 +37,22 @@ cardWidget(
       child: Row(
         children: [
           Row(
-           
             children: [
-               SizedBox( width: 20),
-                                 
-                        Expanded(
-                          flex: 6,
-                          child: TextField(
-                            decoration:  InputDecoration(
-                              hintText: text,
-                              hintStyle:
-                                  TextStyle(color:hintTextColour),
-                              border: InputBorder.none,
-                            ),
-                          ),
-                        ),
-             
+              SizedBox(width: 20),
+              Expanded(
+                flex: 6,
+                child: TextField(
+                  decoration: InputDecoration(
+                    hintText: text,
+                    hintStyle: TextStyle(color: hintTextColour),
+                    border: InputBorder.none,
+                  ),
+                ),
+              ),
             ],
           ),
         ],
       ),
     );
-  }}
+  }
+}

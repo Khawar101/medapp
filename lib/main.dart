@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:speed_code/home_pages/my_home_page.dart';
-
-import 'bottom_nav_bar.dart';
-
+import 'package:speed_code/ui/welcome/welcome.dart';
 
 
 void main() {

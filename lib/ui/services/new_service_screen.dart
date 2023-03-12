@@ -6,14 +6,14 @@ import 'package:speed_code/utils/app_utils.dart';
 import 'package:speed_code/utils/app_utils.dart';
 //import 'package:intl/intl.dart';
 
-class WorxSpace extends StatefulWidget {
-  const WorxSpace({Key? key}) : super(key: key);
+class NewServiceScreen extends StatefulWidget {
+  const NewServiceScreen({Key? key}) : super(key: key);
 
   @override
-  State<WorxSpace> createState() => _WorxSpaceState();
+  State<NewServiceScreen> createState() => _NewServiceScreenState();
 }
 
-class _WorxSpaceState extends State<WorxSpace> {
+class _NewServiceScreenState extends State<NewServiceScreen> {
   bool tapped = true;
   
  // DateTime now = DateTime.now();

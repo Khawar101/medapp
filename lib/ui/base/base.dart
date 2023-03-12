@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_snake_navigationbar/flutter_snake_navigationbar.dart';
-import 'package:speed_code/chating_page.dart';
-import 'package:speed_code/home_pages/main_screen.dart';
+import 'package:speed_code/ui/chat/chating_list_screen.dart';
+import 'package:speed_code/ui/home/home_screen.dart';
 
 class Base extends StatefulWidget {
   const Base({Key? key}) : super(key: key);
@@ -12,17 +12,11 @@ class Base extends StatefulWidget {
 
 class _BaseState extends State<Base> {
   List<Widget> views = [
-    Container(
-      child: Center(child: Text("First Screen")),
-    ),
-    Container(
-      child: Center(child: Text("Second Screen")),
-    ),
-    Home(),
-    Chat(),
-    Container(
-      child: Center(child: Text("Fifth Screen")),
-    ),
+    const Center(child: Text("First Screen")),
+    const Center(child: Text("Second Screen")),
+    const Home(),
+    const ChatListScreen(),
+    const Center(child: Text("Fifth Screen")),
   ];
 
   ShapeBorder? bottomBarShape = const RoundedRectangleBorder(
@@ -37,7 +31,7 @@ class _BaseState extends State<Base> {
   bool showSelectedLabels = false;
   bool showUnselectedLabels = false;
 
-  Color selectedColor = Color(0xFF1859dc);
+  Color selectedColor = const Color(0xFF1859dc);
   Color unselectedColor = Colors.blueGrey;
 
   Gradient selectedGradient =
@@ -58,7 +52,7 @@ class _BaseState extends State<Base> {
     return Scaffold(
       body: views[_selectedItemPosition],
       bottomNavigationBar: SnakeNavigationBar.color(
-        shadowColor: Color(0xFF1859dc),
+        shadowColor: const Color(0xFF1859dc),
         // height: 80,
         behaviour: snakeBarStyle,
         snakeShape: snakeShape,
@@ -70,12 +64,6 @@ class _BaseState extends State<Base> {
         selectedItemColor:
             snakeShape == SnakeShape.indicator ? selectedColor : null,
         unselectedItemColor: unselectedColor,
-
-        ///configuration for SnakeNavigationBar.gradient
-        // snakeViewGradient: selectedGradient,
-        // selectedItemGradient: snakeShape == SnakeShape.indicator ? selectedGradient : null,
-        // unselectedItemGradient: unselectedGradient,
-
         showUnselectedLabels: showUnselectedLabels,
         showSelectedLabels: showSelectedLabels,
 
