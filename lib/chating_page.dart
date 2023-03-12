@@ -37,12 +37,12 @@ class _ChatPageState extends State<ChatPage> {
                         decoration: InputDecoration(
                           prefixIcon: Icon(
                             Icons.search,
-                            size: 50,
+                            size: 35,
                             color: Color(0xff959595),
                           ),
                           hintText: "Search Messages...",
                           hintStyle:
-                              TextStyle(color: Color(0xffb7b7b7), fontSize: 18),
+                              TextStyle(color: Color(0xffb7b7b7), fontSize: 16),
                           border: InputBorder.none,
                         ),
                       ),
@@ -57,7 +57,7 @@ class _ChatPageState extends State<ChatPage> {
                     ),
                     child: const Icon(
                       Icons.edit_square,
-                      size: 40,
+                      size: 35,
                       color: Color(0xffa2a2a2),
                     ),
                   ),
@@ -87,7 +87,7 @@ class _ChatPageState extends State<ChatPage> {
                                                 const MessagesPage()));
                                   },
                                   child: Container(
-                                    height: 90,
+                                    height: 80,
                                     width: double.infinity,
                                     decoration: BoxDecoration(
                                       color: const Color(0xffffffff),
@@ -128,7 +128,7 @@ class _ChatPageState extends State<ChatPage> {
                                                   Text(
                                                     "Shadab Khan",
                                                     style: GoogleFonts.ibmPlexSans(
-                                                        fontSize: 18,
+                                                        fontSize: 16,
                                                         fontWeight:
                                                             FontWeight.bold),
                                                   ),
