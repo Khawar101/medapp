@@ -514,7 +514,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                             color: const Color.fromARGB(255, 25, 109, 179)),
                       ),
                       child: GestureDetector(
-                        onTap: () => Navigator.push(context, MaterialPageRoute(builder: ((context) => const ChatPage()))),
+                        onTap: () => Navigator.push(context, MaterialPageRoute(builder: ((context) => const Chat()))),
                         child: const Icon(
                           Icons.message,
                           size: 25,

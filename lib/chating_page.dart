@@ -3,14 +3,14 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:speed_code/messages_page.dart';
 
 
-class ChatPage extends StatefulWidget {
-  const ChatPage({Key? key}) : super(key: key);
+class Chat extends StatefulWidget {
+  const Chat({Key? key}) : super(key: key);
 
   @override
-  State<ChatPage> createState() => _ChatPageState();
+  State<Chat> createState() => _ChatState();
 }
 
-class _ChatPageState extends State<ChatPage> {
+class _ChatState extends State<Chat> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
